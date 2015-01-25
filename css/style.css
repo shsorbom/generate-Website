@@ -1,0 +1,56 @@
+.Header 
+{
+  background-color: grey;
+  height: 125px;
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding-top: 0px;
+  z-index: -6;
+
+
+}
+.Banner
+{
+  position: relative;
+  height: 90%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin: -7px;
+  /*z-index: 0;*/
+
+}
+#BannerText {
+z-index:1;
+    position:absolute;    
+    color:white;
+    font-size:36px; /*Original size was 24px*/
+    font-weight:bold;
+    left:40px;
+    top:10%;
+}
+
+#NavList
+{
+	list-style-type:none;
+		padding-top: 5px;
+	margin:0;
+	top:5px;
+	left: 20px;
+	z-index: 101;
+}
+#NavLinks
+{
+	position:relative;
+		list-style-type:none;
+
+	z-index: 20;
+	display:inline;
+	top: 0px;
+	color: #bd1e1e;
+}
+.main
+{
+  margin: 10px;
+}

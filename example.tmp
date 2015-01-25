@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<title>Shawn's Site</title>
+<body>
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <div class="Header">
+        <img src="header.png" class="Banner">
+        <p class="Banner" id="BannerText">The Weird and Wonderful Workbench</p>
+   </div>
+   <div class="NavList">
+        <ul data-position="beginNav">
+        </ul data-position="endOfNav">
+    </div>
+    <div class="main">
+    </div>
+</body>
