@@ -18,7 +18,7 @@ function seek-pages
   for links in `ls -1 |grep NavLinks $1`
   do
   {
-    if [ `echo $links| grep strong` != "" ]
+    if [ "`echo $links| grep strong`" != "" ]
     then
     sed -i "/position=\"endOfNav\"/i \
     $HostPageLink" "$fileName"

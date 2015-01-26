@@ -55,7 +55,7 @@ function getBaseLinks
 }
 function addThisPage
 {
-echo Pre funtion ENV: `env|grep Name`
+#echo Pre funtion ENV: `env|grep Name`
 
   if [ "$linkPosition" = "" ]
   then
@@ -70,7 +70,7 @@ function addCurrentPageToOthers
   for page in `ls -1|grep .html`
   do
   {
-    if test "$page" == "$filename"
+    if test "$page" = "$fileName"
     then    
       continue
     fi

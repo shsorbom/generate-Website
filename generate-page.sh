@@ -43,7 +43,7 @@ while getopts ":a::t::f::n::h" opt; do
       
   esac
 done
-echo Pre funtion ENV1: `env|grep Name`
+#echo Pre funtion ENV1: `env|grep Name`
 # #make sure all needed options are set
 #  check-opts
 #  set Continue=`check-opts`
@@ -56,5 +56,5 @@ echo Pre funtion ENV1: `env|grep Name`
  genFile
  getBaseLinks
  addThisPage
-# addCurrentPageToOthers
+ addCurrentPageToOthers
  
