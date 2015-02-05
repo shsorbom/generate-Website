@@ -2,7 +2,7 @@
 source subFunctions.sh
 function check-opts 
 {
-echo `env|grep Set`
+#echo `env|grep Set`
 if $(test "$pageNameSet" -eq 1)
   then
     echo "No valid page name was specified"
@@ -25,9 +25,9 @@ if $(test "$pageNameSet" -eq 1)
 
     return `false`
    fi
-  if $(test "$TEMPLATE_NAME" -eq "untitled.html") 
+  if [ "$TEMPLATE_NAME" = "untitled.html" ] 
   then
-    echo "This file name is reserved for internal purposes\nCannot continue\nExiting"
+    echo "This file name is reserved for internal purposes\nCannot continue\nExiting" 
     return `false`
     fi
 
@@ -47,7 +47,7 @@ function getBaseLinks
       continue    
         
     fi
-    echo "$page"
+    #echo "$page" #debug
     seek-pages $page
     break
   }

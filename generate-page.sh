@@ -45,16 +45,15 @@ while getopts ":a::t::f::n::h" opt; do
 done
 #echo Pre funtion ENV1: `env|grep Name`
 # #make sure all needed options are set
-#  check-opts
-#  set Continue=`check-opts`
+# set Continue=`check-opts`
 # if [ $Continue = `false` ]
 # then
-# echo errors Encountered
-# echo exiting
-# exit `false`
+#   echo "There were Errors"
+#   check-opts
+#   exit `false`
 # fi
- genFile
- getBaseLinks
- addThisPage
- addCurrentPageToOthers
+genFile
+getBaseLinks
+addThisPage
+addCurrentPageToOthers
  
